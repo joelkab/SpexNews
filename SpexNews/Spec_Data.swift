@@ -12,7 +12,8 @@ struct NewsInfo: Decodable, Identifiable {
     let title: String
     let url: String
     let imageURL: String
-    let newsSite, summary, publishedAt, updatedAt: String
+    let newsSite, summary, updatedAt: String
+    let publishedAt: String
     let featured: Bool
     let launches: [Launch]
    
@@ -24,12 +25,19 @@ struct NewsInfo: Decodable, Identifiable {
     }
 }
 
+
+
+
 // MARK: - Launch
 struct Launch: Codable {
     let id, provider: String
 }
 
+
+
 class GridViewModel: ObservableObject {
+    
+    
      
     
     @Published var resultss: [NewsInfo] = []
