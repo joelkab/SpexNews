@@ -18,10 +18,14 @@ struct HomeVIew: View {
     
     
     
-    
+     
     
     var body: some View {
         NavigationView {
+            ZStack {
+                LinearGradient(gradient: Gradient(colors:[ Color.blue, Color.white]), startPoint: .topLeading, endPoint: .bottomTrailing)
+                    .ignoresSafeArea(.all)
+            
             
             ScrollView {
                 ForEach(vm.resultss, id: \.id) { num in
@@ -30,7 +34,7 @@ struct HomeVIew: View {
                     
                     NavigationLink(destination: WebInfo(url: num.url).navigationBarTitle("", displayMode: .inline))   {
                         
-                       
+                        
                         
                         
                         VStack(alignment: .center)  {
@@ -54,8 +58,10 @@ struct HomeVIew: View {
                     }
                 }
                 
+                
                 .navigationTitle("SpexNews")
                 
+            }
             }
             
         }
