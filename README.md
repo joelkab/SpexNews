@@ -10,7 +10,6 @@ Displays the most recent news on space from a variety of sources, including NASA
 - Read posts using the `SFSafariViewController` component.
 - Uses the offical [Spaceflight News API](https://thespacedevs.com/snapi)
 
-![image2_Spexnews](https://user-images.githubusercontent.com/46387248/190247856-24550abb-6895-4bae-8587-12db396efd03.png)
 
 
 
